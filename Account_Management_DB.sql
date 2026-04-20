@@ -10,20 +10,22 @@ CREATE TABLE UserDetails (
 	 [Password] VARCHAR(50),
 	 Firstname VARCHAR(50),
 	 LastName VARCHAR(50),
-	 Email VARCHAR(50),
-	 PhoneNumber VARCHAR(20),
+	 -- Email VARCHAR(50),
+	 -- PhoneNumber VARCHAR(20),
 	 IsActive BIT DEFAULT 0,
 	 CreatedAt DATETIME DEFAULT GETUTCDATE(),
 	 UpdatedAt DATETIME,
 
-	 CONSTRAINT PK_UserDetails_Id PRIMARY KEY CLUSTERED (Id),
-	 CONSTRAINT UQ_UserDetails_Email UNIQUE (Email),
-	 CONSTRAINT UQ_UserDetails_Phone UNIQUE (PhoneNumber)
+	 CONSTRAINT PK_UserDetails_Id PRIMARY KEY CLUSTERED (Id)
+	 -- CONSTRAINT UQ_UserDetails_Email UNIQUE (Email),
+	 -- CONSTRAINT UQ_UserDetails_Phone UNIQUE (PhoneNumber)
  );
 
- SELECT * FROM UserDetails;
-
+ DROP TABLE UserDetails;
  DROP TABLE Accounts;
+ DROP TABLE PassBook;
+
+ SELECT * FROM UserDetails;
 
  CREATE TABLE Accounts (
 	 Id UNIQUEIDENTIFIER NOT NULL,
@@ -38,7 +40,7 @@ CREATE TABLE UserDetails (
 	 ON DELETE CASCADE ON UPDATE CASCADE,
  );
 
- SELECT * FROM UserDetails; SELECT * FROM Accounts;
+ SELECT * FROM UserDetails; SELECT * FROM Accounts; 
 
  CREATE TABLE PassBook (
 	Id UNIQUEIDENTIFIER NOT NULL,
@@ -51,11 +53,15 @@ CREATE TABLE UserDetails (
 	UpdatedAt DATETIME,
 
 	CONSTRAINT PK_PassBook_Id PRIMARY KEY CLUSTERED (Id),
-	CONSTRAINT FK_PassBook_UserDetails_Id FOREIGN KEY (AccountId) REFERENCES UserDetails (Id) 
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
+	CONSTRAINT FK_PassBook_UserDetails_Id FOREIGN KEY (UserId) REFERENCES UserDetails (Id), 
 	CONSTRAINT FK_PassBook_Accounts_Id FOREIGN KEY (AccountId) REFERENCES Accounts (Id)
 	ON DELETE CASCADE
 	ON UPDATE CASCADE,
  );
 
+ SELECT * FROM UserDetails; SELECT * FROM Accounts; SELECT * FROM Passbook;
+
+
+DROP TABLE IF EXISTS PassBook;
+DROP TABLE IF EXISTS Accounts;
+DROP TABLE IF EXISTS UserDetails;
