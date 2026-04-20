@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.API", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Domain", "src\AccountManagement.Domain\AccountManagement.Domain.csproj", "{4543CBE3-EDDF-4B62-B726-422EEF7354A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Test", "AccountManagement.Test\AccountManagement.Test.csproj", "{8A8C7D96-CBF7-4EB3-8B3A-800A8B9C8B9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement.Test", "test\AccountManagement.Test\AccountManagement.Test.csproj", "{04D7C8F6-F0A0-442F-87E0-3DDF995B5B8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{4543CBE3-EDDF-4B62-B726-422EEF7354A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4543CBE3-EDDF-4B62-B726-422EEF7354A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4543CBE3-EDDF-4B62-B726-422EEF7354A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A8C7D96-CBF7-4EB3-8B3A-800A8B9C8B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A8C7D96-CBF7-4EB3-8B3A-800A8B9C8B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A8C7D96-CBF7-4EB3-8B3A-800A8B9C8B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A8C7D96-CBF7-4EB3-8B3A-800A8B9C8B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D7C8F6-F0A0-442F-87E0-3DDF995B5B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D7C8F6-F0A0-442F-87E0-3DDF995B5B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D7C8F6-F0A0-442F-87E0-3DDF995B5B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D7C8F6-F0A0-442F-87E0-3DDF995B5B8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
