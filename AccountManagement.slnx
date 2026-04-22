@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/AccountManagement.API/AccountManagement.API.csproj" Id="50c5db33-272a-4d11-b8e8-7e1d6adb7bfb" />
+  <Project Path="src/AccountManagement.Domain/AccountManagement.Domain.csproj" Id="9ff93260-5806-4fcb-8af0-944b7227f859" />
+  <Project Path="test/AccountManagement.Test/AccountManagement.Test.csproj" Id="4b5216c9-7ae3-48cb-9073-890ff6726f8c" />
+</Solution>
