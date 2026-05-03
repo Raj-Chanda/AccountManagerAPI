@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AccountManagement.Domain.Dto
 {
-    public class AccountSummaryResponse
+    internal class AccountSummaryResponse
     {
         public string UserName { get; set; }
         public decimal Credit { get; set; }
@@ -12,4 +12,3 @@ namespace AccountManagement.Domain.Dto
         public decimal Balance { get; set; }
     }
 }
-
