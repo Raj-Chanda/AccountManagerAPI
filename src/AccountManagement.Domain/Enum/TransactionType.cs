@@ -1,8 +1,10 @@
-﻿namespace AccountManagement.Domain.Enum
+﻿using System.ComponentModel;
+
+namespace AccountManagement.Domain.Enum
 {
     public enum TransactionType
     {
-        Credit = "Cr",
-        Debit = "Dr"
+        Credit,
+        Debit
     }
 }

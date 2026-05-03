@@ -6,6 +6,6 @@ namespace AccountManagement.Domain.Dto
 {
     public class AddUserRequest
     {
-        public sttring UserId { get; set; }
+        public string UserId { get; set; }
     }
 }
